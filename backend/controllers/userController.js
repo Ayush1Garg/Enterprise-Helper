@@ -5,7 +5,6 @@ const authenticateLogin = async (req, res) => {
         const { user_name, passkey } = req.query;
         console.log(user_name, passkey);
         const result = await pool.query(`SELECT * FROM login_details WHERE user_name = $1 AND passkey = $2`, [user_name, passkey]);
-        console.log(result.rows);
         res.json(result.rows);
     } catch (err) {
         console.error(err);
