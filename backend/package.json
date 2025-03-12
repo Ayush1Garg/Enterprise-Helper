@@ -1,0 +1,16 @@
+{
+  "name": "enterprise-helper",
+  "version": "1.0.0",
+  "description": "Backend for Enterprise Helper",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "docxtemplater": "^3.27.0",
+    "express": "^4.21.2",
+    "pg": "^8.13.3",
+    "pizzip": "^3.1.1"
+  }
+}
